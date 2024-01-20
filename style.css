@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+
+:root {
+    --primary-light-red: hsl(0, 100%, 67%);
+    --primary-Orangey-yellow: hsl(39, 100%, 56%);
+    --primary-Green-teal: hsl(166, 100%, 37%);
+    --primary-Cobalt-blue: hsl(234, 85%, 45%);
+
+    --gradient-bg-slate-blue: hsl(252, 100%, 67%);
+    --gradient-bg-royal-blue: hsl(241, 81%, 54%);
+    --gradient-circle-Violet-blue: hsla(256, 72%, 46%, 1);
+    --gradient-circle-Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-pale-blue: hsl(221, 100%, 96%);
+    --neutral-light-lavender: hsl(241, 100%, 89%);
+    --neutral-darkgrey-blue: hsl(224, 30%, 27%);
+
+    --fs-normal: 18px;
+    --fw-light: 500;
+    --fw-normal: 700;
+    --fw-dark: 800;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    border-radius: 2rem;
+    display: flex;
+    background-color: var(--neutral-white);
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    /* padding-top: 20rem; */
+}
+@media (max-width: 788px) {
+    .container{
+        margin-top: 18rem;
+    }
+} 
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 20rem;
+    height: 27rem;
+    /* border: 2px solid; */
+    padding: 1.3rem;
+    border-radius: 2rem;
+}
+
+.flex-box>* {
+    margin-block: 0.325rem;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.left {
+    color: var(--neutral-white);
+    background: linear-gradient(var(--gradient-bg-slate-blue), var(--gradient-bg-royal-blue));
+    padding: 2rem;
+}
+
+#circle {
+    background: linear-gradient(var(--gradient-circle-Violet-blue), var(--gradient-circle-Persian-blue));
+    --diameter: 170px;
+   /*  border: 2px solid n; */
+    border-radius: 100%;
+    height: var(--diameter);
+    width: var(--diameter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2.125rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+#Big-font{
+    font-size: 4rem;
+}
+.light-font{
+    color: var(--neutral-light-lavender);
+    font-size: 22px;
+    padding-inline: 2.7rem;
+}
+.small{
+    font-size: 17px;
+}
+
+
+/* Starting second box from here */
+
+
+.right{
+   align-items: flex-start;
+   padding: 2rem; 
+   background-color: var(--neutral-white);
+   box-shadow: 1.965rem 0.725rem 210px 0px var(--neutral-light-lavender);
+   gap: 1rem;
+   border-radius: 0rem 1rem 1rem 0rem;
+}
+.white > *{
+    /* border: 2px solid red; */
+    margin-bottom: 1rem;
+    color: var(--neutral-darkgrey-blue);
+    
+}
+.small-box{
+    display: flex;
+    justify-content: space-between;
+    width: 17rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    height: 1.5rem;
+}
+.small-flex{
+    display: flex;
+    gap: 7px;
+}
+#red{
+  
+    color: var(--primary-light-red);
+    font-weight: var(--fw-normal);
+}
+#yellow{
+    color: var(--primary-Orangey-yellow);
+    font-weight: var(--fw-normal);
+}
+#teal{
+    color: var(--primary-Green-teal);
+    font-weight: var(--fw-normal);
+}
+#purple{
+    color: var(--primary-Cobalt-blue);
+    font-weight: var(--fw-normal);
+}
+.btn{
+    width: 19rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 0.725rem;
+    background: linear-gradient(var(--gradient-bg-slate-blue), var(--gradient-bg-royal-blue));
+    color: var(--neutral-white);
+    border: 0px;
+    cursor: pointer;
+}
+.red{
+    background-color:hsla(0, 100%, 67%, 0.053) ;
+}
+.yellow{
+    background-color: hsla(39, 100%, 56%, 0.053) ;
+    
+}
+.teal{
+    
+    background-color:hsla(166, 100%, 37%,0.053);
+}
+.purple{
+    background-color:hsla(234, 85%, 45%, 0.053) ;
+    
+}
+
+
+/* Now media queries */
+
